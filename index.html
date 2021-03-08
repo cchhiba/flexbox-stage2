@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <style>
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container div {
+
+    flex: 0 32%;
+    height: 100px;
+    background-color: #efefef;
+    margin: 25px 10px 25px 10px;
+    padding: 4vw;
+
+}
+/* make sure to apply flex to parent container in your markup */
+.container-b {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 900px;
+    margin-bottom: 100px;
+  }
+
+.container-b .item {
+  width: 14%;
+  background-color: rgb(142, 249, 226);
+}
+
+.item-1 {
+  height: 85%;
+}
+
+.item-2 {
+  height: 45%;
+}
+
+
+.item-3 {
+  height: 90%;
+}
+
+.item-4 {
+  height: 30%;
+}
+
+.item-5 {
+  height: 30%;
+}
+
+.container-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+  height: 500px;
+}
+
+.item-center {
+  width: 20%;
+  height: 20%;
+  background-color: rgb(204, 132, 147);
+}
+
+  </style>
+  <title>Flexbox stage 2</title>
+</head>
+
+
+
+
+<body>
+
+  <div class="container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+
+  <div class="container-b">
+    <div class="item item-1">1</div>
+    <div class="item item-2">2</div>
+    <div class="item item-3">3</div>
+    <div class="item item-4">4</div>
+    <div class="item item-5">5</div>
+  </div>
+
+  <div class="container-c">
+    <div class="item-center">1</div>
+  </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</body>
+</html>
